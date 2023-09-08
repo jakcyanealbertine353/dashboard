@@ -5,7 +5,8 @@
 }
 
 :root{
-    --cor_menu: purple;
+    --cor_menu: #d8ebb5;
+    --altura_cabecalho: 55px;
 }
 .cabecalho{
     display:flex;
@@ -13,9 +14,33 @@
     justify-content: space-between;
     background-color: var(--cor_menu);
     align-items: center;
+    height: var(--altura_cabecalho);
+    padding: 35px 40px;
+
+
+}
+.cabecalho__detalhes_logo{
+    width: 120px;
+}
+.cabecalho__detalhes-logo:hover{
+    transform: scale(1.2);
+
 }
 .cabecalho__detalhes-user{
     height: 60px;
     width: 60px;
     border-radius: 50px;
+    object-fit: cover;
+}
+.cabecalho__detalhes-logo:hover {
+    transform: scale(1.2);
+}
+.corpo{
+    height:calc( 100vh - var(--altura_cabecalho));
+
+}
+.corpo__menu{
+    width: 20%;
+    height: 100%;
+    background-color: #639A67;
 }
